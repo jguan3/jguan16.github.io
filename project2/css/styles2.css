@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+  font-family: 'Open Sans', Verdana, sans-serif;
+  background: #e8f0fe;
+  color: #2c3e50;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #1a73e8;
+  padding: 1.2rem 0;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(26, 115, 232, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: #f1f3f4;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.15rem;
+  padding: 0.6rem 1.3rem;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #1a73e8;
+  background-color: #fff;
+  transform: scale(1.05);
+  outline: none;
+}
+
+h1, h2 {
+  color: #004466;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+main, body > *:not(header) {
+  max-width: 58rem;
+  margin: 2rem auto;
+  padding: 1.8rem 3%;
+  background: linear-gradient(135deg, #ffffff, #d0e4ff);
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 86, 179, 0.1);
+  transition: box-shadow 0.4s ease;
+}
+
+main:hover {
+  box-shadow: 0 15px 30px rgba(0, 86, 179, 0.2);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 1.5rem auto;
+  display: block;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+img:hover,
+img:focus {
+  transform: translateY(-6px) scale(1.08);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
+  outline: none;
+}
+
+iframe {
+  display: block;
+  margin: 2rem auto;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+ul {
+  padding-left: 2.5rem;
+  color: #34495e;
+  font-weight: 500;
+  line-height: 1.65;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 650px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  main, body > *:not(header) {
+    margin: 1.5rem 1rem;
+    padding: 1.5rem 1.8rem;
+  }
+}
